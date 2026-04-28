@@ -1,0 +1,17 @@
+id = "go-template"
+name = "Go Template"
+version = "1.0.0"
+schema_version = 1
+authors = [
+  "Tom Zaspel <tom@zaspel.it>"
+]
+description = "Syntax highlighting for go-template"
+repository = "https://github.com/tzabbi/zed-go-template"
+
+[language_servers.gotmpl]
+name = "gopls"
+language = "gotmpl"
+
+[grammars.gotmpl]
+repository = "https://github.com/ngalaiko/tree-sitter-go-template"
+commit = "9d3f6e526dd074b9edae9070b7bb778f00e87a5b"
