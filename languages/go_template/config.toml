@@ -1,0 +1,11 @@
+name = "Go Template"
+grammar = "gotmpl"
+language_servers = ["gopls"]
+path_suffixes = ["tmpl", "gotmpl", "gohtml"]
+line_comment = ["{{/* ", " */}}"]
+block_comment = ["{{/* ", " */}}"]
+brackets = [
+    { start = "{{", end = "}}", close = true, newline = false },
+    { start = "{{-", end = "-}}", close = true, newline = false },
+    { start = "(", end = ")", close = true, newline = false },
+]
